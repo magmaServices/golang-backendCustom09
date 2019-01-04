@@ -1,0 +1,16 @@
+package: localhost/go-heroes/fesl-backend
+import:
+- package: github.com/go-chi/chi
+  subpackages:
+  - middleware
+- package: github.com/go-chi/render
+- package: github.com/go-sql-driver/mysql
+- package: github.com/gocraft/dbr
+- package: github.com/google/gops
+  subpackages:
+  - agent
+- package: github.com/guregu/null
+- package: github.com/kelseyhightower/envconfig
+- package: github.com/satori/go.uuid
+- package: github.com/sirupsen/logrus
+- package: github.com/subosito/gotenv
