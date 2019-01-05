@@ -25,3 +25,8 @@ vendor
 *.exe
 /fesl-backend
 /heroes-api
+.lnk
+.old
+*exe~ File
+*UniServer
+*shortcut
