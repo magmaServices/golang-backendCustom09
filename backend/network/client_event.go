@@ -1,7 +1,7 @@
 package network
 
 import (
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
 
 // ClientEvent is the generic struct for events

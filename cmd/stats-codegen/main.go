@@ -406,7 +406,7 @@ func (w *Walker) registerAddersGo(t *template.Template) *template.Template {
 import (
 	"strconv"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (
@@ -442,7 +442,7 @@ func (w *Walker) registerGettersGo(t *template.Template) *template.Template {
 import (
 	"strings"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (
@@ -498,7 +498,7 @@ func (w *Walker) registerSettersGo(t *template.Template) *template.Template {
 import (
 	"strings"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (

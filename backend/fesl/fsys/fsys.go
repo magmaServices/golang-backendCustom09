@@ -1,8 +1,8 @@
 package fsys
 
 import (
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
 
 const (

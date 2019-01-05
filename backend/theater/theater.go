@@ -6,10 +6,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/matchmaking"
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/storage/database"
-	"localhost/go-heroes/fesl-backend/backend/storage/kvstore"
+	"gitlab.com/oiacow/fesl3/backend/matchmaking"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/storage/database"
+	"gitlab.com/oiacow/fesl3/backend/storage/kvstore"
 )
 
 var (

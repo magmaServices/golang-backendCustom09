@@ -3,7 +3,7 @@ package acct
 import (
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network"
 )
 
 type reqNuLoginPersona struct {

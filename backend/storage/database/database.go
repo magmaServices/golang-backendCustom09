@@ -4,8 +4,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gocraft/dbr"
 	"github.com/sirupsen/logrus"
-	"localhost/go-heroes/fesl-backend/backend/config"
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (

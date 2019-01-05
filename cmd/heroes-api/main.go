@@ -7,8 +7,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/subosito/gotenv"
 
-	"localhost/go-heroes/fesl-backend/magma/config"
-	"localhost/go-heroes/fesl-backend/magma/server"
+	"gitlab.com/oiacow/fesl3/magma/config"
+	"gitlab.com/oiacow/fesl3/magma/server"
 )
 
 var (

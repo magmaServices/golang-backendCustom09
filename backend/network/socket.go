@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/config"
 )
 
 // Socket is a basic event-based TCP-Server

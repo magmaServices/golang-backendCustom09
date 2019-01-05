@@ -3,7 +3,7 @@ package game
 import (
 	"net/http"
 
-	"localhost/go-heroes/fesl-backend/magma/tpl"
+	"gitlab.com/oiacow/fesl3/magma/tpl"
 )
 
 // GET /en/game/store?personaId=2&lvl=-1&eqp=8+10+56+69+70+112+113+251+416+417+418+420+979+981+2145+3002+5000+5001+5002+5003+5004+5005+5006+5007+5008 HTTP/1.1

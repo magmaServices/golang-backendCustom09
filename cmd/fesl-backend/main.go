@@ -12,13 +12,13 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/subosito/gotenv"
 
-	"localhost/go-heroes/fesl-backend/backend/config"
-	"localhost/go-heroes/fesl-backend/backend/fesl"
-	"localhost/go-heroes/fesl-backend/backend/matchmaking"
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/storage/database"
-	"localhost/go-heroes/fesl-backend/backend/storage/kvstore"
-	"localhost/go-heroes/fesl-backend/backend/theater"
+	"gitlab.com/oiacow/fesl3/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/fesl"
+	"gitlab.com/oiacow/fesl3/backend/matchmaking"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/storage/database"
+	"gitlab.com/oiacow/fesl3/backend/storage/kvstore"
+	"gitlab.com/oiacow/fesl3/backend/theater"
 )
 
 func main() {

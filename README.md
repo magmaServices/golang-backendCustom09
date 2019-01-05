@@ -35,7 +35,7 @@ To download code from the repository you could use a terminal (i.e. mingw/gitbas
 ```bash
 mkdir -p $GOPATH/src/localhost/go-heroes && \
 cd $GOPATH/src/localhost/go-heroes && \
-git clone https://localhost/go-heroes/fesl-backend.git && \
+git clone https://gitlab.com/oiacow/fesl3.git && \
 cd backend
 ```
 

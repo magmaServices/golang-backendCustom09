@@ -4,9 +4,9 @@ import (
 	"net"
 	"strconv"
 
-	"localhost/go-heroes/fesl-backend/backend/matchmaking"
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/matchmaking"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
 
 // ->N CGAM 0x40000000

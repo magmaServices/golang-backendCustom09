@@ -8,9 +8,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/subosito/gotenv"
 
-	"localhost/go-heroes/fesl-backend/backend/config"
-	"localhost/go-heroes/fesl-backend/backend/model"
-	"localhost/go-heroes/fesl-backend/backend/storage/database"
+	"gitlab.com/oiacow/fesl3/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/storage/database"
 )
 
 func initConfig() {
@@ -71,11 +71,11 @@ func main() {
 
 func CreateSchema(sess *dbr.Session) (err error) {
 	_, err = sess.Exec(`CREATE TABLE heroes (
-		hero_id INT(11) NOT NULL AUTO_INCREMENT,
+		heroID INT(11) NOT NULL AUTO_INCREMENT,
 		hero_name VARCHAR(50) NOT NULL,
-		player_id INT(11) NOT NULL,
+		user_id INT(11) NOT NULL,
 		hero_stats TEXT NOT NULL,
-		PRIMARY KEY (hero_id)
+		PRIMARY KEY (heroID)
 		)
 		COLLATE='latin1_swedish_ci'
 		;
@@ -85,11 +85,11 @@ func CreateSchema(sess *dbr.Session) (err error) {
 	}
 
 	_, err = sess.Exec(`CREATE TABLE players (
-			player_id INT(11) NOT NULL AUTO_INCREMENT,
+			user_id INT(11) NOT NULL AUTO_INCREMENT,
 			username VARCHAR(50) NULL DEFAULT NULL,
 			password VARCHAR(50) NULL DEFAULT NULL,
 			game_token VARCHAR(50) NULL DEFAULT NULL,
-			PRIMARY KEY (player_id)
+			PRIMARY KEY (user_id)
 		)
 		COLLATE='latin1_swedish_ci'
 		;

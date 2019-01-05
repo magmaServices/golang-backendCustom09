@@ -6,7 +6,7 @@ package ranking
 import (
 	"strings"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (
@@ -653,6 +653,234 @@ var (
 		},
 		"aw6122": func(p *model.HeroStats, value string, pt int) error {
 			p.Medals.Awards[6122] = value
+			return nil
+		},
+		"aw6123": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6123] = value
+			return nil
+		},
+		"aw6124": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6124] = value
+			return nil
+		},
+		"aw6125": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6125] = value
+			return nil
+		},
+		"aw6126": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6126] = value
+			return nil
+		},
+		"aw6127": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6127] = value
+			return nil
+		},
+		"aw6128": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6128] = value
+			return nil
+		},
+		"aw6129": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6129] = value
+			return nil
+		},
+		"aw6130": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6130] = value
+			return nil
+		},
+		"aw6131": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6131] = value
+			return nil
+		},
+		"aw6132": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6132] = value
+			return nil
+		},
+		"aw6133": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6133] = value
+			return nil
+		},
+		"aw6134": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6134] = value
+			return nil
+		},
+		"aw6135": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6135] = value
+			return nil
+		},
+		"aw6136": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6136] = value
+			return nil
+		},
+		"aw6137": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6137] = value
+			return nil
+		},
+		"aw6138": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6138] = value
+			return nil
+		},
+		"aw6139": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6139] = value
+			return nil
+		},
+		"aw6140": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6140] = value
+			return nil
+		},
+		"aw6141": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6141] = value
+			return nil
+		},
+		"aw6142": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6142] = value
+			return nil
+		},
+		"aw6143": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6143] = value
+			return nil
+		},
+		"aw6144": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6144] = value
+			return nil
+		},
+		"aw6145": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6145] = value
+			return nil
+		},
+		"aw6146": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6146] = value
+			return nil
+		},
+		"aw6147": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6147] = value
+			return nil
+		},
+		"aw6148": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6148] = value
+			return nil
+		},
+		"aw6149": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6149] = value
+			return nil
+		},
+		"aw6150": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6150] = value
+			return nil
+		},
+		"aw6151": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6151] = value
+			return nil
+		},
+		"aw6152": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6152] = value
+			return nil
+		},
+		"aw6153": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6153] = value
+			return nil
+		},
+		"aw6154": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6154] = value
+			return nil
+		},
+		"aw6155": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6155] = value
+			return nil
+		},
+		"aw6156": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6156] = value
+			return nil
+		},
+		"aw6157": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6157] = value
+			return nil
+		},
+		"aw6158": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6158] = value
+			return nil
+		},
+		"aw6159": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6159] = value
+			return nil
+		},
+		"aw6160": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6160] = value
+			return nil
+		},
+		"aw6161": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6161] = value
+			return nil
+		},
+		"aw6162": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6162] = value
+			return nil
+		},
+		"aw6163": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6163] = value
+			return nil
+		},
+		"aw6164": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6164] = value
+			return nil
+		},
+		"aw6165": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6165] = value
+			return nil
+		},
+		"aw6166": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6166] = value
+			return nil
+		},
+		"aw6167": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6167] = value
+			return nil
+		},
+		"aw6168": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6168] = value
+			return nil
+		},
+		"aw6169": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6169] = value
+			return nil
+		},
+		"aw6170": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6170] = value
+			return nil
+		},
+		"aw6171": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6171] = value
+			return nil
+		},
+		"aw6172": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6172] = value
+			return nil
+		},
+		"aw6173": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6173] = value
+			return nil
+		},
+		"aw6174": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6174] = value
+			return nil
+		},
+		"aw6175": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6175] = value
+			return nil
+		},
+		"aw6176": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6176] = value
+			return nil
+		},
+		"aw6177": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6177] = value
+			return nil
+		},
+		"aw6178": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6178] = value
+			return nil
+		},
+		"aw6179": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6179] = value
 			return nil
 		},
 		"mid0": func(p *model.HeroStats, value string, pt int) error {

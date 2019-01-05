@@ -7,11 +7,11 @@ import (
 	"github.com/go-chi/chi/middleware"
 	"github.com/sirupsen/logrus"
 
-	dc "localhost/go-heroes/fesl-backend/magma/server/handlers-dc"
-	game "localhost/go-heroes/fesl-backend/magma/server/handlers-game"
-	nucleus "localhost/go-heroes/fesl-backend/magma/server/handlers-nucleus"
-	ofb "localhost/go-heroes/fesl-backend/magma/server/handlers-ofb"
-	relationships "localhost/go-heroes/fesl-backend/magma/server/handlers-relationships"
+	dc "gitlab.com/oiacow/fesl3/magma/server/handlers-dc"
+	game "gitlab.com/oiacow/fesl3/magma/server/handlers-game"
+	nucleus "gitlab.com/oiacow/fesl3/magma/server/handlers-nucleus"
+	ofb "gitlab.com/oiacow/fesl3/magma/server/handlers-ofb"
+	relationships "gitlab.com/oiacow/fesl3/magma/server/handlers-relationships"
 )
 
 func (s *Server) registerRoutes() http.Handler {

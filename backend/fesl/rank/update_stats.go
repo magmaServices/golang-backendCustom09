@@ -6,7 +6,13 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network"
+)
+
+const (
+	k = "k"
+	v = "v"
+	t = "t"
 )
 
 type ansUpdateStats struct {
@@ -33,7 +39,7 @@ type stat struct {
 	value float64
 }
 
-// UpdateStats - updates stats about a soldier
+// UpdateStats - UpdateStats about a selected hero
 func (r *Ranking) UpdateStats(event network.EventClientCommand) {
 	switch event.Client.GetClientType() {
 	case "server":
@@ -52,50 +58,46 @@ func (r *Ranking) serverUpdateStats(event *network.EventClientCommand) {
 }
 
 func (r *Ranking) updateStats(event *network.EventClientCommand) {
-	users, _ := strconv.Atoi(event.Command.Message["u.[]"])
+	//pointers 
+	ans := event.Command.Message
+	users, _ := strconv.Atoi(ans["u.[]"])
 	sess := r.DB.NewSession()
+	////////
 
 	for i := 0; i < users; i++ {
-		heroID, _ := event.Command.Message.IntVal(fmt.Sprintf("u.%d.o", i))
+		heroID, _ := ans.IntVal(fmt.Sprintf("u.%d.o", i))
 		p, err := r.DB.FindHeroStats(sess, heroID)
 		if err != nil {
 			logrus.
 				WithError(err).
-				WithField("heroID", event.Command.Message[fmt.Sprintf("u.%d.o", i)]).
-				Warn("Cannot resolve hero stats when updating stats")
+				WithField("heroID", ans[fmt.Sprintf("u.%d.o", i)]).
+				Warn("Cant resolve heroStats when updatingStats")
 			return
 		}
 
-		numKeys, _ := event.Command.Message.IntVal(fmt.Sprintf("u.%d.s.[]", i))
+		numKeys, _ := ans.IntVal(fmt.Sprintf("u.%d.s.[]", i))
 		for j := 0; j < numKeys; j++ {
-			prefix := fmt.Sprintf("u.%d.s.%d.", i, j)
 
-			key := event.Command.Message.Get(prefix + "k")
-			ut := event.Command.Message.Get(prefix + "ut")
-			pt := event.Command.Message.Get(prefix + "pt")
-			val := event.Command.Message.Get(prefix + "v")
-			text := event.Command.Message.Get(prefix + "t")
+			pre := fmt.Sprintf("u.%d.s.%d.", i, j)
+			//suggestion create a const dictionary -> c_wallet_hero = HP -> "k" = k -> event.Command.Message = reply
+			key := ans.Get(pre + k)
+			ut := ans.Get(pre + "ut")
+			pt := ans.Get(pre + "pt")
+			val := ans.Get(pre + v)
+			text := ans.Get(pre + t)
+
+			//ChangeStats in both cases
 			if text != "" {
-				// c_items, c_eqp... (separated by semicolons)
+				// c_items, c_eqp..
 				val = text
-			}
-
-			if ut == "0" {
+				logrus.Println("--UpdateStat replace ut 0--"+ key, val, ut)
 				r.changeStats(&p, key, val, ut, pt)
-				logrus.Println("==UpdateStat as ut 0=="+ key, val, ut)
-
-			} else {
-				// TODO: Implement adders for stats
-				logrus.
-					WithFields(logrus.Fields{
-						"key":        key,
-						"updatetype": ut,
-						"pointtype":  pt,
-						"value":      val,
-						"text":       text,
-					}).
-					Warn("rank.UpdateStats, key ignored for update")
-			}
+				//GOTO LN102
+			} else{
+				logrus.Println("--UpdateStat sum ut 3"+ key, val, ut)
+				r.changeStats(&p, key, val, ut, pt)
+			}			
+			
 		}
 
 		if err = r.commitStats(sess, &p, heroID); err != nil {

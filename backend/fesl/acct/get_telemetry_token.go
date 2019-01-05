@@ -1,8 +1,8 @@
 package acct
 
 import (
-	"localhost/go-heroes/fesl-backend/backend/config"
-	"localhost/go-heroes/fesl-backend/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/network"
 )
 
 type ansGetTelemetryToken struct {

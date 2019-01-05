@@ -2,7 +2,7 @@
 # PS> Set-ExecutionPolicy RemoteSigned
 # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-5.1
 # Feel free to close PS for administrator and open new PS session in fesl-backend directory
-# PS> cd $env:GOPATH/src/localhost/go-heroes/fesl-backend
+# PS> cd $env:GOPATH/src/gitlab.com/oiacow/fesl3
 #
 # Then, dot-source the file in PS
 # PS> . .\Powah.ps1

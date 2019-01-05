@@ -4,7 +4,7 @@ import (
 	uuid "github.com/satori/go.uuid"
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network"
 )
 
 type reqNuLogin struct {

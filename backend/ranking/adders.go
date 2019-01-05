@@ -6,7 +6,7 @@ package ranking
 import (
 	"strconv"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (
@@ -2102,6 +2102,747 @@ var (
 			}
 			sum := current + addition
 			p.Medals.Awards[6122] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6123": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6123], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6123] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6124": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6124], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6124] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6125": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6125], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6125] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6126": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6126], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6126] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6127": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6127], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6127] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6128": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6128], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6128] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6129": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6129], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6129] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6130": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6130], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6130] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6131": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6131], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6131] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6132": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6132], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6132] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6133": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6133], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6133] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6134": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6134], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6134] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6135": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6135], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6135] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6136": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6136], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6136] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6137": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6137], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6137] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6138": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6138], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6138] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6139": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6139], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6139] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6140": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6140], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6140] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6141": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6141], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6141] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6142": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6142], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6142] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6143": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6143], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6143] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6144": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6144], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6144] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6145": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6145], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6145] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6146": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6146], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6146] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6147": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6147], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6147] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6148": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6148], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6148] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6149": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6149], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6149] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6150": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6150], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6150] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6151": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6151], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6151] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6152": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6152], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6152] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6153": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6153], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6153] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6154": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6154], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6154] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6155": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6155], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6155] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6156": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6156], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6156] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6157": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6157], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6157] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6158": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6158], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6158] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6159": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6159], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6159] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6160": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6160], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6160] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6161": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6161], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6161] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6162": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6162], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6162] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6163": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6163], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6163] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6164": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6164], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6164] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6165": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6165], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6165] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6166": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6166], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6166] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6167": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6167], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6167] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6168": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6168], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6168] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6169": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6169], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6169] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6170": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6170], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6170] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6171": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6171], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6171] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6172": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6172], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6172] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6173": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6173], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6173] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6174": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6174], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6174] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6175": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6175], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6175] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6176": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6176], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6176] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6177": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6177], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6177] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6178": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6178], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6178] = strconv.FormatFloat(sum, 'f', 4, 64)
+			return nil
+		},
+		"aw6179": func(p *model.HeroStats, value string, pt int) error {
+			addition, err := strconv.ParseFloat(value, 64)
+			if err != nil {
+				return err
+			}
+			current, err := strconv.ParseFloat(p.Medals.Awards[6179], 64)
+			if err != nil {
+				return err
+			}
+			sum := current + addition
+			p.Medals.Awards[6179] = strconv.FormatFloat(sum, 'f', 4, 64)
 			return nil
 		},
 		"mid0": func(p *model.HeroStats, value string, pt int) error {

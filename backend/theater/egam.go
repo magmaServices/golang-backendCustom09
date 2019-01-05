@@ -6,9 +6,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
-	"localhost/go-heroes/fesl-backend/backend/ranking"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/ranking"
 )
 
 // EGAM is sent to Game-Client

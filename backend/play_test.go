@@ -5,12 +5,12 @@ package internal_test
 // 	"net"
 // 	"testing"
 
-// 	"localhost/go-heroes/fesl-backend/backend/theater"
+// 	"gitlab.com/oiacow/fesl3/backend/theater"
 
-// 	"localhost/go-heroes/fesl-backend/backend/fesl/pnow"
-// 	"localhost/go-heroes/fesl-backend/backend/fesl/rank"
-// "localhost/go-heroes/fesl-backend/backend/network"
-// "localhost/go-heroes/fesl-backend/backend/network/codec"
+// 	"gitlab.com/oiacow/fesl3/backend/fesl/pnow"
+// 	"gitlab.com/oiacow/fesl3/backend/fesl/rank"
+// "gitlab.com/oiacow/fesl3/backend/network"
+// "gitlab.com/oiacow/fesl3/backend/network/codec"
 // )
 
 // func TestPlayNow(t *testing.T) {

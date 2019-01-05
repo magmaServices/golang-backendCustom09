@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"localhost/go-heroes/fesl-backend/magma/tpl"
+	"gitlab.com/oiacow/fesl3/magma/tpl"
 )
 
 var (

@@ -7,14 +7,14 @@ import (
 )
 
 const (
-	tableHeroes = "heroes"
+	tableHeroes = "game_heroes"
 )
 
 // Hero defines a single record in heroes table
 type Hero struct {
-	ID        int    `db:"hero_id"`
-	HeroName  string `db:"hero_name"`
-	PlayerID  int    `db:"player_id"`
+	ID        int    `db:"heroID"`
+	HeroName  string `db:"heroName"`
+	PlayerID  int    `db:"user_id"`
 	HeroStats string `db:"hero_stats"`
 }
 
@@ -22,9 +22,9 @@ func InsertHero(tx *dbr.Tx, hero *Hero) error {
 	r, err := tx.
 		InsertInto(tableHeroes).
 		Columns(
-			// "hero_id",
-			"hero_name",
-			"player_id",
+			// "heroID",
+			"heroID",
+			"heroName",
 			"hero_stats",
 		).
 		Record(hero).
@@ -44,12 +44,12 @@ func InsertHero(tx *dbr.Tx, hero *Hero) error {
 func (q *Queries) FindHeroesByPlayerID(sess *dbr.Session, playerID int) (hs []Hero, err error) {
 	_, err = sess.
 		Select(
-			"hero_id",
-			"hero_name",
-			"player_id",
+			"heroID",
+			"heroName",
+			"user_id",
 		).
 		From(tableHeroes).
-		Where("player_id = ?", playerID).
+		Where("user_id = ?", playerID).
 		Load(&hs)
 
 	return hs, err
@@ -59,12 +59,12 @@ func (q *Queries) FindHeroesByPlayerID(sess *dbr.Session, playerID int) (hs []He
 func (q *Queries) FindHeroByName(sess *dbr.Session, heroName string) (h Hero, err error) {
 	err = sess.
 		Select(
-			"hero_id",
-			"hero_name",
-			"player_id",
+			"heroID",
+			"heroName",
+			"user_id",
 		).
 		From(tableHeroes).
-		Where("hero_name = ?", heroName).
+		Where("heroName = ?", heroName).
 		LoadOne(&h)
 	return h, err
 }
@@ -75,7 +75,7 @@ func (q *Queries) FindHeroStats(sess *dbr.Session, heroID int) (pr HeroStats, er
 	err = sess.
 		Select("hero_stats").
 		From(tableHeroes).
-		Where("hero_id = ?", heroID).
+		Where("heroID = ?", heroID).
 		LoadOne(&payload)
 	if err != nil {
 		return pr, err
@@ -94,7 +94,7 @@ func (q *Queries) UpdateHeroStats(tx *dbr.Tx, heroID int, pr *HeroStats) error {
 	_, err = tx.
 		Update(tableHeroes).
 		Set("hero_stats", string(by)).
-		Where("hero_id = ?", heroID).
+		Where("heroID = ?", heroID).
 		Exec()
 	return err
 }

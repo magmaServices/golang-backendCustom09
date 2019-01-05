@@ -4,11 +4,11 @@ import (
 	"github.com/gocraft/dbr"
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
-	"localhost/go-heroes/fesl-backend/backend/ranking"
-	"localhost/go-heroes/fesl-backend/backend/storage/database"
+	"gitlab.com/oiacow/fesl3/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/ranking"
+	"gitlab.com/oiacow/fesl3/backend/storage/database"
 )
 
 const (

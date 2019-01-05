@@ -3,9 +3,9 @@ package fsys
 import (
 	"time"
 
-	"localhost/go-heroes/fesl-backend/backend/config"
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
 
 // reqHello is definition of the fsys.Hello request call

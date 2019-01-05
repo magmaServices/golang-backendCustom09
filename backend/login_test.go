@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"localhost/go-heroes/fesl-backend/backend/fesl/acct"
-	"localhost/go-heroes/fesl-backend/backend/fesl/fsys"
-	"localhost/go-heroes/fesl-backend/backend/fesl/gsum"
-	"localhost/go-heroes/fesl-backend/backend/fesl/rank"
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
-	"localhost/go-heroes/fesl-backend/backend/storage/database/dbtest"
+	"gitlab.com/oiacow/fesl3/backend/fesl/acct"
+	"gitlab.com/oiacow/fesl3/backend/fesl/fsys"
+	"gitlab.com/oiacow/fesl3/backend/fesl/gsum"
+	"gitlab.com/oiacow/fesl3/backend/fesl/rank"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/storage/database/dbtest"
 )
 
 type fakeConn struct {

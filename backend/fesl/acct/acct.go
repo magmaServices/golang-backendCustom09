@@ -1,9 +1,9 @@
 package acct
 
 import (
-	"localhost/go-heroes/fesl-backend/backend/network"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
-	"localhost/go-heroes/fesl-backend/backend/storage/database"
+	"gitlab.com/oiacow/fesl3/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/storage/database"
 )
 
 const (

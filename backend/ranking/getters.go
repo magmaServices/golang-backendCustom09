@@ -6,7 +6,7 @@ package ranking
 import (
 	"strings"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 var (
@@ -241,741 +241,1083 @@ var (
 		},
 		"aw6000": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6000] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6000], nil
 		},
 		"aw6001": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6001] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6001], nil
 		},
 		"aw6002": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6002] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6002], nil
 		},
 		"aw6003": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6003] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6003], nil
 		},
 		"aw6004": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6004] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6004], nil
 		},
 		"aw6005": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6005] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6005], nil
 		},
 		"aw6006": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6006] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6006], nil
 		},
 		"aw6007": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6007] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6007], nil
 		},
 		"aw6008": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6008] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6008], nil
 		},
 		"aw6009": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6009] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6009], nil
 		},
 		"aw6010": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6010] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6010], nil
 		},
 		"aw6011": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6011] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6011], nil
 		},
 		"aw6012": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6012] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6012], nil
 		},
 		"aw6013": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6013] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6013], nil
 		},
 		"aw6014": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6014] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6014], nil
 		},
 		"aw6015": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6015] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6015], nil
 		},
 		"aw6016": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6016] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6016], nil
 		},
 		"aw6017": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6017] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6017], nil
 		},
 		"aw6018": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6018] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6018], nil
 		},
 		"aw6019": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6019] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6019], nil
 		},
 		"aw6020": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6020] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6020], nil
 		},
 		"aw6021": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6021] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6021], nil
 		},
 		"aw6022": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6022] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6022], nil
 		},
 		"aw6023": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6023] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6023], nil
 		},
 		"aw6024": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6024] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6024], nil
 		},
 		"aw6025": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6025] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6025], nil
 		},
 		"aw6026": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6026] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6026], nil
 		},
 		"aw6027": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6027] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6027], nil
 		},
 		"aw6028": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6028] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6028], nil
 		},
 		"aw6029": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6029] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6029], nil
 		},
 		"aw6030": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6030] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6030], nil
 		},
 		"aw6031": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6031] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6031], nil
 		},
 		"aw6032": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6032] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6032], nil
 		},
 		"aw6033": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6033] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6033], nil
 		},
 		"aw6034": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6034] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6034], nil
 		},
 		"aw6035": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6035] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6035], nil
 		},
 		"aw6036": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6036] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6036], nil
 		},
 		"aw6037": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6037] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6037], nil
 		},
 		"aw6038": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6038] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6038], nil
 		},
 		"aw6039": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6039] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6039], nil
 		},
 		"aw6040": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6040] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6040], nil
 		},
 		"aw6041": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6041] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6041], nil
 		},
 		"aw6042": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6042] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6042], nil
 		},
 		"aw6043": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6043] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6043], nil
 		},
 		"aw6044": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6044] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6044], nil
 		},
 		"aw6045": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6045] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6045], nil
 		},
 		"aw6046": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6046] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6046], nil
 		},
 		"aw6047": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6047] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6047], nil
 		},
 		"aw6048": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6048] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6048], nil
 		},
 		"aw6049": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6049] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6049], nil
 		},
 		"aw6050": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6050] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6050], nil
 		},
 		"aw6051": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6051] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6051], nil
 		},
 		"aw6052": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6052] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6052], nil
 		},
 		"aw6053": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6053] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6053], nil
 		},
 		"aw6054": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6054] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6054], nil
 		},
 		"aw6055": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6055] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6055], nil
 		},
 		"aw6056": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6056] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6056], nil
 		},
 		"aw6057": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6057] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6057], nil
 		},
 		"aw6058": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6058] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6058], nil
 		},
 		"aw6059": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6059] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6059], nil
 		},
 		"aw6060": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6060] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6060], nil
 		},
 		"aw6061": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6061] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6061], nil
 		},
 		"aw6062": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6062] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6062], nil
 		},
 		"aw6063": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6063] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6063], nil
 		},
 		"aw6064": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6064] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6064], nil
 		},
 		"aw6065": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6065] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6065], nil
 		},
 		"aw6066": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6066] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6066], nil
 		},
 		"aw6067": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6067] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6067], nil
 		},
 		"aw6068": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6068] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6068], nil
 		},
 		"aw6069": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6069] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6069], nil
 		},
 		"aw6070": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6070] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6070], nil
 		},
 		"aw6071": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6071] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6071], nil
 		},
 		"aw6072": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6072] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6072], nil
 		},
 		"aw6073": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6073] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6073], nil
 		},
 		"aw6074": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6074] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6074], nil
 		},
 		"aw6075": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6075] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6075], nil
 		},
 		"aw6076": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6076] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6076], nil
 		},
 		"aw6077": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6077] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6077], nil
 		},
 		"aw6078": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6078] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6078], nil
 		},
 		"aw6079": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6079] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6079], nil
 		},
 		"aw6080": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6080] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6080], nil
 		},
 		"aw6081": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6081] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6081], nil
 		},
 		"aw6082": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6082] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6082], nil
 		},
 		"aw6083": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6083] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6083], nil
 		},
 		"aw6084": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6084] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6084], nil
 		},
 		"aw6085": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6085] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6085], nil
 		},
 		"aw6086": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6086] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6086], nil
 		},
 		"aw6087": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6087] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6087], nil
 		},
 		"aw6088": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6088] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6088], nil
 		},
 		"aw6089": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6089] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6089], nil
 		},
 		"aw6090": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6090] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6090], nil
 		},
 		"aw6091": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6091] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6091], nil
 		},
 		"aw6092": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6092] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6092], nil
 		},
 		"aw6093": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6093] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6093], nil
 		},
 		"aw6094": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6094] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6094], nil
 		},
 		"aw6095": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6095] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6095], nil
 		},
 		"aw6096": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6096] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6096], nil
 		},
 		"aw6097": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6097] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6097], nil
 		},
 		"aw6098": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6098] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6098], nil
 		},
 		"aw6099": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6099] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6099], nil
 		},
 		"aw6100": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6100] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6100], nil
 		},
 		"aw6101": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6101] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6101], nil
 		},
 		"aw6102": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6102] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6102], nil
 		},
 		"aw6103": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6103] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6103], nil
 		},
 		"aw6104": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6104] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6104], nil
 		},
 		"aw6105": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6105] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6105], nil
 		},
 		"aw6106": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6106] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6106], nil
 		},
 		"aw6107": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6107] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6107], nil
 		},
 		"aw6108": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6108] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6108], nil
 		},
 		"aw6109": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6109] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6109], nil
 		},
 		"aw6110": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6110] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6110], nil
 		},
 		"aw6111": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6111] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6111], nil
 		},
 		"aw6112": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6112] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6112], nil
 		},
 		"aw6113": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6113] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6113], nil
 		},
 		"aw6114": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6114] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6114], nil
 		},
 		"aw6115": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6115] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6115], nil
 		},
 		"aw6116": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6116] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6116], nil
 		},
 		"aw6117": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6117] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6117], nil
 		},
 		"aw6118": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6118] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6118], nil
 		},
 		"aw6119": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6119] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6119], nil
 		},
 		"aw6120": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6120] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6120], nil
 		},
 		"aw6121": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6121] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6121], nil
 		},
 		"aw6122": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Awards[6122] == "" {
-				return "0.0000", nil
+				return "6000", nil
 			}
 			return p.Medals.Awards[6122], nil
+		},
+		"aw6123": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6123] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6123], nil
+		},
+		"aw6124": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6124] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6124], nil
+		},
+		"aw6125": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6125] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6125], nil
+		},
+		"aw6126": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6126] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6126], nil
+		},
+		"aw6127": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6127] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6127], nil
+		},
+		"aw6128": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6128] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6128], nil
+		},
+		"aw6129": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6129] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6129], nil
+		},
+		"aw6130": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6130] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6130], nil
+		},
+		"aw6131": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6131] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6131], nil
+		},
+		"aw6132": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6132] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6132], nil
+		},
+		"aw6133": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6133] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6133], nil
+		},
+		"aw6134": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6134] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6134], nil
+		},
+		"aw6135": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6135] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6135], nil
+		},
+		"aw6136": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6136] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6136], nil
+		},
+		"aw6137": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6137] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6137], nil
+		},
+		"aw6138": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6138] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6138], nil
+		},
+		"aw6139": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6139] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6139], nil
+		},
+		"aw6140": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6140] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6140], nil
+		},
+		"aw6141": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6141] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6141], nil
+		},
+		"aw6142": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6142] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6142], nil
+		},
+		"aw6143": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6143] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6143], nil
+		},
+		"aw6144": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6144] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6144], nil
+		},
+		"aw6145": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6145] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6145], nil
+		},
+		"aw6146": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6146] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6146], nil
+		},
+		"aw6147": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6147] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6147], nil
+		},
+		"aw6148": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6148] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6148], nil
+		},
+		"aw6149": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6149] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6149], nil
+		},
+		"aw6150": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6150] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6150], nil
+		},
+		"aw6151": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6151] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6151], nil
+		},
+		"aw6152": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6152] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6152], nil
+		},
+		"aw6153": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6153] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6153], nil
+		},
+		"aw6154": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6154] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6154], nil
+		},
+		"aw6155": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6155] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6155], nil
+		},
+		"aw6156": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6156] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6156], nil
+		},
+		"aw6157": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6157] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6157], nil
+		},
+		"aw6158": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6158] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6158], nil
+		},
+		"aw6159": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6159] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6159], nil
+		},
+		"aw6160": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6160] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6160], nil
+		},
+		"aw6161": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6161] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6161], nil
+		},
+		"aw6162": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6162] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6162], nil
+		},
+		"aw6163": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6163] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6163], nil
+		},
+		"aw6164": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6164] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6164], nil
+		},
+		"aw6165": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6165] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6165], nil
+		},
+		"aw6166": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6166] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6166], nil
+		},
+		"aw6167": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6167] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6167], nil
+		},
+		"aw6168": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6168] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6168], nil
+		},
+		"aw6169": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6169] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6169], nil
+		},
+		"aw6170": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6170] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6170], nil
+		},
+		"aw6171": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6171] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6171], nil
+		},
+		"aw6172": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6172] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6172], nil
+		},
+		"aw6173": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6173] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6173], nil
+		},
+		"aw6174": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6174] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6174], nil
+		},
+		"aw6175": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6175] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6175], nil
+		},
+		"aw6176": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6176] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6176], nil
+		},
+		"aw6177": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6177] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6177], nil
+		},
+		"aw6178": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6178] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6178], nil
+		},
+		"aw6179": func(p *model.HeroStats) (string, error) {
+			if p.Medals.Awards[6179] == "" {
+				return "6000", nil
+			}
+			return p.Medals.Awards[6179], nil
 		},
 		"mid0": func(p *model.HeroStats) (string, error) {
 			if p.Medals.Missions[0] == "" {

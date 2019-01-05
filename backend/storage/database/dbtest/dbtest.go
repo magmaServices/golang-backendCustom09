@@ -1,6 +1,6 @@
 package dbtest
 
-import "localhost/go-heroes/fesl-backend/backend/model"
+import "gitlab.com/oiacow/fesl3/backend/model"
 
 type FakeDB struct {
 	QueriesAdapter

@@ -2,7 +2,7 @@ package database
 
 import (
 	"github.com/gocraft/dbr"
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 type Adapter interface {

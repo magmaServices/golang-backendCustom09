@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"localhost/go-heroes/fesl-backend/backend/config"
+	"gitlab.com/oiacow/fesl3/backend/config"
 )
 
 // newMySQL creates a DSN string to connect to MySQL database

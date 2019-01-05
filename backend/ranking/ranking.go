@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"localhost/go-heroes/fesl-backend/backend/model"
+	"gitlab.com/oiacow/fesl3/backend/model"
 )
 
 const (

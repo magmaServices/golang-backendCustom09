@@ -5,7 +5,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/network"
+	"gitlab.com/oiacow/fesl3/backend/network"
 )
 
 type reqGetStatsForOwners struct {
@@ -72,7 +72,7 @@ func (r *Ranking) getStatsForOwners(event *network.EventClientCommand) {
 
 		statsPairs, err := r.fetchStats(&heroStats, keys)
 		if err != nil {
-			logrus.WithError(err).Warn("rank.GetStatsForOwners: Cannot fetch stats for hero of ID %d", ownerID)
+			logrus.WithError(err).Warn("rank.GetStatsForOwners: Cannot fetch stats for hero", ownerID)
 			return
 		}
 

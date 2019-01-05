@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"localhost/go-heroes/fesl-backend/magma/server/auth"
-	"localhost/go-heroes/fesl-backend/magma/tpl"
+	"gitlab.com/oiacow/fesl3/magma/server/auth"
+	"gitlab.com/oiacow/fesl3/magma/tpl"
 )
 
 type dtSession struct {

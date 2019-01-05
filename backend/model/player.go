@@ -12,19 +12,19 @@ const (
 // Player
 // table = player
 type Player struct {
-	ID             int         `db:"player_id"`
+	ID             int         `db:"user_id"`
 	Username       string      `db:"username"`
 	Password       string      `db:"password"`
 	GameToken      string      `db:"game_token"` // TODO: something like one-time password
 	PreferServer   null.String `db:"prefer_server"`
-	SelectedHeroID null.Int    `db:"selected_hero_id"`
+	SelectedHeroID null.Int    `db:"selected_heroID"`
 }
 
 func InsertPlayer(tx *dbr.Tx, player *Player) error {
 	r, err := tx.
 		InsertInto(tablePlayers).
 		Columns(
-			// "player_id", // TODO: skip player_id
+			// "user_id", // TODO: skip user_id
 			"username",
 			"password",
 			"game_token",
@@ -46,12 +46,12 @@ func InsertPlayer(tx *dbr.Tx, player *Player) error {
 func (q *Queries) FindPlayerByToken(sess *dbr.Session, token string) (player Player, err error) {
 	err = sess.
 		Select(
-			"player_id",
+			"user_id",
 			"username",
 			"password",
 			"game_token",
 			"prefer_server",
-			"selected_hero_id",
+			"selected_heroID",
 		).
 		From(tablePlayers).
 		Where("game_token = ?", token).
@@ -63,15 +63,15 @@ func (q *Queries) FindPlayerByToken(sess *dbr.Session, token string) (player Pla
 func (q *Queries) FindPlayerByID(sess *dbr.Session, playerID int) (player Player, err error) {
 	err = sess.
 		Select(
-			"player_id",
+			"user_id",
 			"username",
 			"password",
 			"game_token",
 			"prefer_server",
-			"selected_hero_id",
+			"selected_heroID",
 		).
 		From(tablePlayers).
-		Where("player_id = ?", playerID).
+		Where("user_id = ?", playerID).
 		LoadOne(&player)
 	return player, err
 }

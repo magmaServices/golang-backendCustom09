@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/sirupsen/logrus"
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
 
 func (c *Client) SendPacket(pkt []byte) error {

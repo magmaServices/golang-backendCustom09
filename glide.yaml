@@ -1,4 +1,4 @@
-package: localhost/go-heroes/fesl-backend
+package: gitlab.com/oiacow/fesl3
 import:
 - package: github.com/go-chi/chi
   subpackages:

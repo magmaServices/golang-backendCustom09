@@ -3,7 +3,7 @@ package network
 import (
 	"github.com/sirupsen/logrus"
 
-	"localhost/go-heroes/fesl-backend/backend/network/codec"
+	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
 
 func (client *Client) readFESL(data []byte) {
