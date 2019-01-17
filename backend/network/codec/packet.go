@@ -3,7 +3,6 @@ package codec
 import (
 	"bytes"
 	"encoding/binary"
-	"fmt"
 )
 
 const (
@@ -103,12 +102,12 @@ func ExtractPacket(buf *bytes.Buffer) (*RawPacket, error) {
 
 	// 12 is number of actual read bytes 3x4=12
 	portion := binary.BigEndian.Uint32(pkt.Length) - 12
-	if portion <= 0 {
-		return nil, fmt.Errorf("Undersized packet")
-	}
-	if int(portion) > buf.Len() {
-		return nil, fmt.Errorf("Oversized packet")
-	}
+	// if portion <= 0 {
+	// 	return nil, fmt.Errorf("Undersized packet")
+	// }
+	// if int(portion) > buf.Len() {
+	// 	return nil, fmt.Errorf("Oversized packet")
+	// }
 
 	pkt.Payload = make([]byte, int(portion))
 	if _, err = buf.Read(pkt.Payload); err != nil {

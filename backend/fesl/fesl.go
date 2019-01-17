@@ -129,14 +129,11 @@ func (fm *Manager) handleTCP(event network.SocketEvent) {
 func (fm *Manager) newClient(client *network.Client) {
 	fm.fsys.MemCheck(client)
 
-	client.HeartTicker = time.NewTicker(55 * time.Second)
+	client.HeartTicker = time.NewTicker(time.Second * 4)
 	go func() {
 		for client.IsActive {
 			select {
 			case <-client.HeartTicker.C:
-				if !client.IsActive {
-					return
-				}
 				fm.fsys.MemCheck(client)
 			}
 		}

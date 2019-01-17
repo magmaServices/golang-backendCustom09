@@ -72,7 +72,7 @@ func (r *Ranking) getStatsForOwners(event *network.EventClientCommand) {
 
 		statsPairs, err := r.fetchStats(&heroStats, keys)
 		if err != nil {
-			logrus.WithError(err).Warn("rank.GetStatsForOwners: Cannot fetch stats for hero", ownerID)
+			logrus.WithError(err).Warn("rank.GetStatsForOwners: Cannot fetch stats for hero of ID %d", ownerID)
 			return
 		}
 

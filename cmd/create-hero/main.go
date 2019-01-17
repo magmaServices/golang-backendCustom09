@@ -71,11 +71,11 @@ func main() {
 
 func CreateSchema(sess *dbr.Session) (err error) {
 	_, err = sess.Exec(`CREATE TABLE heroes (
-		heroID INT(11) NOT NULL AUTO_INCREMENT,
+		hero_id INT(11) NOT NULL AUTO_INCREMENT,
 		hero_name VARCHAR(50) NOT NULL,
-		user_id INT(11) NOT NULL,
+		player_id INT(11) NOT NULL,
 		hero_stats TEXT NOT NULL,
-		PRIMARY KEY (heroID)
+		PRIMARY KEY (hero_id)
 		)
 		COLLATE='latin1_swedish_ci'
 		;
@@ -85,11 +85,11 @@ func CreateSchema(sess *dbr.Session) (err error) {
 	}
 
 	_, err = sess.Exec(`CREATE TABLE players (
-			user_id INT(11) NOT NULL AUTO_INCREMENT,
+			player_id INT(11) NOT NULL AUTO_INCREMENT,
 			username VARCHAR(50) NULL DEFAULT NULL,
 			password VARCHAR(50) NULL DEFAULT NULL,
 			game_token VARCHAR(50) NULL DEFAULT NULL,
-			PRIMARY KEY (user_id)
+			PRIMARY KEY (player_id)
 		)
 		COLLATE='latin1_swedish_ci'
 		;

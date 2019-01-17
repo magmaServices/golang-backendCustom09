@@ -92,8 +92,8 @@ type Globals struct {
 
 // Medals, awards and missions
 type Medals struct {
-	Awards            map[int]string `json:"aw" stats:"aw" default:"6000" start:"6000" end:"6179"` //when lvl 30 more missions are avail
-	Missions          map[int]string `json:"mid" stats:"mid" default:"0" start:"0" end:"2"`
+	Awards            map[int]string `json:"aw" stats:"aw" default:"0.0000" start:"6000" end:"6182"`
+	Missions          map[int]string `json:"mid" stats:"mid" default:"0.0000" start:"0" end:"2"`
 	PlayedMissions    map[int]string `json:"c_mid" stats:"c_mid" default:"0.0000" start:"0" end:"2"`
 	CompletedMissions map[int]string `json:"c_cmid" stats:"c_cmid" default:"0.0000" start:"0" end:"2"`
 	MissionOne        map[int]string `json:"m0c" stats:"m0c" default:"0.0000" start:"0" end:"5"`

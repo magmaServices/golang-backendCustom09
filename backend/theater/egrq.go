@@ -48,6 +48,8 @@ type ansEGRQ struct {
 func (tm *Theater) EnterGameRequest(event *network.EventClientCommand, gameServer *network.Client, gr GameRequest) {
 	externalIP := event.Client.IpAddr.(*net.TCPAddr).IP.String()
 
+
+	//game server
 	gameServer.WriteEncode(&codec.Answer{
 		Type: codec.ThtrEnterGameRequest,
 		Payload: ansEGRQ{
@@ -55,7 +57,7 @@ func (tm *Theater) EnterGameRequest(event *network.EventClientCommand, gameServe
 			Name:         gr.HeroName,
 			UserID:       gr.HeroID,
 			PlayerID:     gr.PlayerID,
-			Ticket:       gr.Ticket,
+			Ticket:       "2018751182",
 			IP:           externalIP,
 			Port:         strconv.Itoa(event.Client.IpAddr.(*net.TCPAddr).Port),
 			IntIP:        event.Command.Message["R-INT-IP"],
@@ -80,4 +82,55 @@ func (tm *Theater) EnterGameRequest(event *network.EventClientCommand, gameServe
 			GameID:       gr.GameID,
 		},
 	})
+
+	//Game Client
+	type reqEGEG struct {
+		reqEGAM
+	}
+
+	type ansEGEG struct {
+		TID           string `fesl:"TID"`
+		Platform      string `fesl:"PL"`
+		Ticket        string `fesl:"TICKET"`
+		PlayerID      int    `fesl:"PID"`
+		IP            string `fesl:"I"`
+		Port          string `fesl:"P"`
+		EncryptionKey string `fesl:"EKEY"`
+		// Alternatively to EKEY it is possible to use NOENCYRPTIONKEY
+		NoEcryptionKey string `fesl:"NOENCYRPTIONKEY,omitempty"`
+		IntIP          string `fesl:"INT-IP"`
+		IntPort        string `fesl:"INT-PORT"`
+		Secret         string `fesl:"SECRET,omitempty"`
+		// Alternatively to SECRET it is possible to use NOSECRET
+		NoSecret string `fesl:"NOSECRET,omitempty"`
+		Ugid     string `fesl:"UGID,omitempty"`
+		// Alternatively to UGID it is possible to use NOGUID
+		NoGUID  string `fesl:"NOGUID,omitempty"`
+		Huid     string `fesl:"HUID"`
+		LobbyID string `fesl:"LID"`
+		GameID  int    `fesl:"GID"`
+	}
+
+	event.Client.WriteEncode(&codec.Answer{
+		Type: codec.ThtrEnterGameEntitleGame,
+		Payload: ansEGEG{
+			TID:           event.Command.Message["TID"],
+			Platform:      "PC",
+			Ticket:       "2018751182",
+			PlayerID:      gr.PlayerID,
+			IP:            gameServer.ServerData.Get("IP"),
+			Port:          gameServer.ServerData.Get("PORT"),
+			EncryptionKey: "O65zZ2D2A58mNrZw1hmuJw%3d%3d",
+			IntIP:   gameServer.ServerData.Get("INT-IP"),
+			IntPort: gameServer.ServerData.Get("INT-PORT"),
+			Secret:  "2587913",
+			Ugid:    gameServer.ServerData.Get("UGID"),
+			LobbyID: gr.LobbyID,
+			Huid:     "1",
+			GameID:  gr.GameID,
+		},
+	})
 }
+
+
+

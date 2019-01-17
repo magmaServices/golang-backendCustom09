@@ -52,7 +52,7 @@ type nuLoginContainerErr struct {
 
 // NuLogin handles acct.NuLogin command
 func (acct *Account) NuLogin(event network.EventClientCommand) {
-	uniqueID, _ := uuid.NewV4()
+	uniqueID:= uuid.NewV4()
 	lkey := uniqueID.String()
 	event.Client.PlayerData.LobbyKey = lkey
 	err := network.Lobby.Add(lkey, event.Client.PlayerData)

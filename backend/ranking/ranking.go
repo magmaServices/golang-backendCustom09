@@ -71,9 +71,9 @@ func UpdateStatValue(p *model.HeroStats, key, value string, updateType, pointTyp
 	switch ut {
 	case UpdateTypeReplace:
 		return setStatsValue(p, key, value, pt)
-	case UpdateTypeMax:
-		// return maxStatsValue(p, key, value, pt)
-		return nil
+	// case UpdateTypeMax:
+	// 	// return maxStatsValue(p, key, value, pt)
+	// 	return nil
 	case UpdateTypeAdd:
 		return addStatsValue(p, key, value, pt)
 	default:

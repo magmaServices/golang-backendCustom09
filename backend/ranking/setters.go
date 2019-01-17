@@ -883,6 +883,18 @@ var (
 			p.Medals.Awards[6179] = value
 			return nil
 		},
+		"aw6180": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6180] = value
+			return nil
+		},
+		"aw6181": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6181] = value
+			return nil
+		},
+		"aw6182": func(p *model.HeroStats, value string, pt int) error {
+			p.Medals.Awards[6182] = value
+			return nil
+		},
 		"mid0": func(p *model.HeroStats, value string, pt int) error {
 			p.Medals.Missions[0] = value
 			return nil

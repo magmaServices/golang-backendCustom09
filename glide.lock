@@ -1,20 +1,20 @@
-hash: cba92120a9ecb417d59c33ae93e397d6eb5823e24e463fef0a221dda741e0904
-updated: 2019-01-04T17:16:56.258024536+01:00
+hash: 82651ef978382e3b71b38f8d0bdf4c49222a1749f14d89a7a2e077d566b88398
+updated: 2019-01-17T18:36:48.9842973-02:00
 imports:
 - name: github.com/go-chi/chi
-  version: 6172f3d1540ed5dd37208c991f5fbae139e2a2e5
+  version: e95203758b2a6ec24a8e97124d5719ffe5ec1374
   subpackages:
   - middleware
 - name: github.com/go-chi/render
   version: 3215478343fbc559bd3fc08f7031bb134d6bdad5
 - name: github.com/go-sql-driver/mysql
-  version: c45f530f8e7fe40f4687eaa50d0c8c5f1b66f9e0
+  version: 72cd26f257d44c1114970e19afddcd812016007e
 - name: github.com/gocraft/dbr
   version: 042fe86dc2daa9684f746ab337971e84147e8856
   subpackages:
   - dialect
 - name: github.com/google/gops
-  version: f341a40f99ec27eb59f219922de4c5f8369251a1
+  version: 89672dbe3c4ba97d53af7e839e8097e1ccbb4977
   subpackages:
   - agent
   - internal
@@ -24,11 +24,11 @@ imports:
 - name: github.com/kardianos/osext
   version: ae77be60afb1dcacde03767a8c37337fad28ac14
 - name: github.com/kelseyhightower/envconfig
-  version: dd1402a4d99de9ac2f396cd6fcb957bc2c695ec1
+  version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/konsorten/go-windows-terminal-sequences
   version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
 - name: github.com/satori/go.uuid
-  version: b2ce2384e17bbe0c6d34077efa39dbab3e09123b
+  version: f58768cc1a7a7e77a3bd49e98cdd21419399b6a3
 - name: github.com/sirupsen/logrus
   version: e1e72e9de974bd926e5c56f83753fba2df402ce5
 - name: github.com/subosito/gotenv
@@ -38,7 +38,7 @@ imports:
   subpackages:
   - ssh/terminal
 - name: golang.org/x/sys
-  version: 82a175fd1598e8a172e58ebdf5ed262bb29129e5
+  version: 11f53e03133963fb11ae0588e08b5e0b85be8be5
   subpackages:
   - unix
   - windows

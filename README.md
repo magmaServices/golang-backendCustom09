@@ -33,8 +33,8 @@ Before diving into the development you will probably need to download and [insta
 To download code from the repository you could use a terminal (i.e. mingw/gitbash on Windows or preferable: built-in terminal emulator on Linux):
 
 ```bash
-mkdir -p $GOPATH/src/localhost/go-heroes && \
-cd $GOPATH/src/localhost/go-heroes && \
+mkdir -p $GOPATH/src/gitlab.com/oiacow && \
+cd $GOPATH/src/gitlab.com/oiacow && \
 git clone https://gitlab.com/oiacow/fesl3.git && \
 cd backend
 ```

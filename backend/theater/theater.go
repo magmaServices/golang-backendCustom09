@@ -140,14 +140,11 @@ func (tm *Theater) handleTLS(event network.SocketEvent) {
 
 func (tm *Theater) newClient(client *network.Client) {
 	// Start Heartbeat
-	client.HeartTicker = time.NewTicker(time.Second * 55)
+	client.HeartTicker = time.NewTicker(time.Second * 4)
 	go func() {
 		for client.IsActive {
 			select {
 			case <-client.HeartTicker.C:
-				if !client.IsActive {
-					return
-				}
 				tm.PING(client)
 			}
 		}

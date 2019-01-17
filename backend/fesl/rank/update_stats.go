@@ -9,12 +9,6 @@ import (
 	"gitlab.com/oiacow/fesl3/backend/network"
 )
 
-const (
-	k = "k"
-	v = "v"
-	t = "t"
-)
-
 type ansUpdateStats struct {
 	Txn   string      `fesl:"TXN"`
 	Users []userStats `fesl:"u"`
@@ -39,7 +33,7 @@ type stat struct {
 	value float64
 }
 
-// UpdateStats - UpdateStats about a selected hero
+// UpdateStats - updates stats about a soldier
 func (r *Ranking) UpdateStats(event network.EventClientCommand) {
 	switch event.Client.GetClientType() {
 	case "server":
@@ -58,46 +52,49 @@ func (r *Ranking) serverUpdateStats(event *network.EventClientCommand) {
 }
 
 func (r *Ranking) updateStats(event *network.EventClientCommand) {
-	//pointers 
-	ans := event.Command.Message
-	users, _ := strconv.Atoi(ans["u.[]"])
+	reply := event.Command.Message
+	users, _ := strconv.Atoi(event.Command.Message["u.[]"])
 	sess := r.DB.NewSession()
-	////////
 
 	for i := 0; i < users; i++ {
-		heroID, _ := ans.IntVal(fmt.Sprintf("u.%d.o", i))
+		heroID, _ := reply.IntVal(fmt.Sprintf("u.%d.o", i))
 		p, err := r.DB.FindHeroStats(sess, heroID)
 		if err != nil {
 			logrus.
 				WithError(err).
-				WithField("heroID", ans[fmt.Sprintf("u.%d.o", i)]).
-				Warn("Cant resolve heroStats when updatingStats")
+				WithField("heroID", reply[fmt.Sprintf("u.%d.o", i)]).
+				Warn("Cant find heroStats when updating stats")
 			return
 		}
 
-		numKeys, _ := ans.IntVal(fmt.Sprintf("u.%d.s.[]", i))
+		numKeys, _ := reply.IntVal(fmt.Sprintf("u.%d.s.[]", i))
 		for j := 0; j < numKeys; j++ {
+			prefix := fmt.Sprintf("u.%d.s.%d.", i, j)
 
-			pre := fmt.Sprintf("u.%d.s.%d.", i, j)
-			//suggestion create a const dictionary -> c_wallet_hero = HP -> "k" = k -> event.Command.Message = reply
-			key := ans.Get(pre + k)
-			ut := ans.Get(pre + "ut")
-			pt := ans.Get(pre + "pt")
-			val := ans.Get(pre + v)
-			text := ans.Get(pre + t)
-
-			//ChangeStats in both cases
-			if text != "" {
+			key :=  reply.Get(prefix + "k")
+			ut :=   reply.Get(prefix + "ut")
+			pt :=   reply.Get(prefix + "pt")
+			val :=  reply.Get(prefix + "v")
+			txt :=  reply.Get(prefix + "t")
+			if txt != "" {
 				// c_items, c_eqp..
-				val = text
-				logrus.Println("--UpdateStat replace ut 0--"+ key, val, ut)
-				r.changeStats(&p, key, val, ut, pt)
-				//GOTO LN102
-			} else{
-				logrus.Println("--UpdateStat sum ut 3"+ key, val, ut)
-				r.changeStats(&p, key, val, ut, pt)
-			}			
-			
+				val = txt
+			}
+
+			err := r.changeStats(&p, key, val, ut, pt)
+			if err != nil {
+				// TODO: adders for stats
+				logrus.
+					WithError(err).
+					WithFields(logrus.Fields{
+						"key":        key,
+						"updatetype": ut,
+						"pointtype":  pt,
+						"value":      val,
+						"txt":       txt,
+					}).
+					Warn("rank.UpdateStats, query update ignored!")
+			}
 		}
 
 		if err = r.commitStats(sess, &p, heroID); err != nil {

@@ -1,8 +1,9 @@
 package theater
 
 import (
-	"fmt"
-	"sync"
+
+
+
 
 	"github.com/sirupsen/logrus"
 
@@ -103,8 +104,6 @@ func (tm *Theater) EnterGame(event network.EventClientCommand) {
 		return
 	}
 
-	ticket := generateTicket()
-
 	gr := GameRequest{
 		// PlayerID: 2,
 		PlayerID: event.Client.PlayerData.PlayerID,
@@ -114,12 +113,11 @@ func (tm *Theater) EnterGame(event network.EventClientCommand) {
 		HeroName: event.Client.PlayerData.HeroName,
 		GameID:   game.ID,
 		LobbyID:  event.Command.Message["LID"],
-		Ticket:   ticket,
+		Ticket:       "2018751182",
 		Stats:    stats,
 	}
 
 	tm.EnterGameRequest(&event, game.GameServer, gr)
-	tm.EGEG(&event, game.GameServer, gr)
 }
 
 type GameRequest struct {
@@ -132,14 +130,3 @@ type GameRequest struct {
 	Ticket   string
 }
 
-var (
-	lastTicket = 10005
-	ticketMu   sync.Mutex
-)
-
-func generateTicket() string {
-	defer ticketMu.Unlock()
-	ticketMu.Lock()
-	lastTicket++
-	return fmt.Sprintf("%d", lastTicket)
-}
