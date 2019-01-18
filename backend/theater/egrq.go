@@ -2,8 +2,10 @@ package theater
 
 import (
 	"net"
-	"strconv"
+	"gitlab.com/oiacow/fesl3/backend/ranking"
 
+	"strconv"
+	"github.com/sirupsen/logrus"
 	"gitlab.com/oiacow/fesl3/backend/network"
 	"gitlab.com/oiacow/fesl3/backend/network/codec"
 )
@@ -29,6 +31,7 @@ type ansEGRQ struct {
 	RUAccid      int    `fesl:"R-U-accid"`
 	RUElo        string `fesl:"R-U-elo"`
 	RUTeam       string `fesl:"R-U-team"`
+	Platform     string `fesl:"PL"`
 	RUKit        string `fesl:"R-U-kit"`
 	RULvl        string `fesl:"R-U-lvl"`
 	RUDataCenter string `fesl:"R-U-dataCenter"`
@@ -47,29 +50,68 @@ type ansEGRQ struct {
 // who wants join server
 func (tm *Theater) EnterGameRequest(event *network.EventClientCommand, gameServer *network.Client, gr GameRequest) {
 	externalIP := event.Client.IpAddr.(*net.TCPAddr).IP.String()
+	heroStats, err := tm.db.FindHeroStats(tm.db.NewSession(), event.Client.PlayerData.HeroID)
+	if err != nil {
+		logrus.
+			WithError(err).
+			WithField("heroID", event.Client.PlayerData.HeroID).
+			Warn("Cannot fetch stats for hero when entering a game")
+		return
+	}	
 
+	
+	stats, err := ranking.GetStats(&heroStats, "c_kit", "c_team", "elo", "level")
+	if err != nil {
+		logrus.
+			WithError(err).
+			WithField("heroID", event.Client.PlayerData.HeroID).
+			Warn("Cannot get stats for hero when entering a game")
+		return
+	}
 
+	gameID, err := event.Command.Message.IntVal("GID")
+	if err != nil {
+		logrus.WithError(err).Warn("Cannot parse value of GID in theater.EGAM")
+		return
+	}
+
+	// game, err := tm.mm.GetGame(gameID)
+	// if err != nil {
+	// 	logrus.
+	// 		WithError(err).
+	// 		WithField("gameID", gameID).
+	// 		Warn("Not found any server when joining game")
+	// 	return
+	// }
+
+	PlayerID := event.Client.PlayerData.PlayerID
+	HeroID := event.Client.PlayerData.HeroID
+	HeroName := event.Client.PlayerData.HeroName
+	Stats := stats
+
+	logrus.Println("-BEGIN EGRQ------")
 	//game server
 	gameServer.WriteEncode(&codec.Answer{
 		Type: codec.ThtrEnterGameRequest,
 		Payload: ansEGRQ{
 			TID:          event.Command.Message["TID"],
-			Name:         gr.HeroName,
-			UserID:       gr.HeroID,
-			PlayerID:     gr.PlayerID,
+			Name:         HeroName,
+			UserID:       HeroID,
+			PlayerID:     PlayerID,
 			Ticket:       "2018751182",
 			IP:           externalIP,
 			Port:         strconv.Itoa(event.Client.IpAddr.(*net.TCPAddr).Port),
 			IntIP:        event.Command.Message["R-INT-IP"],
 			IntPort:      event.Command.Message["R-INT-PORT"],
 			Ptype:        "P",
-			RUser:        gr.HeroName,
-			RUid:         gr.HeroID,
-			RUAccid:      gr.PlayerID,
-			RUElo:        gr.Stats["elo"],
-			RUTeam:       gr.Stats["c_team"],
-			RUKit:        gr.Stats["c_kit"],
-			RULvl:        gr.Stats["level"],
+			Platform:      "PC",
+			RUser:        HeroName,
+			RUid:         HeroID,
+			RUAccid:      PlayerID,
+			RUElo:        Stats["elo"],
+			RUTeam:       Stats["c_team"],
+			RUKit:        Stats["c_kit"],
+			RULvl:        Stats["level"],
 			RUDataCenter: network.RegionEastCoast,
 			RUExternalIP: externalIP,
 			RUInternalIP: event.Command.Message["R-INT-IP"],
@@ -78,10 +120,11 @@ func (tm *Theater) EnterGameRequest(event *network.EventClientCommand, gameServe
 			RIntPort:     event.Command.Message["R-INT-PORT"],
 			Xuid:         "24",
 			RXuid:        "24",
-			LobbyID:      gr.LobbyID,
-			GameID:       gr.GameID,
+			LobbyID:      "1",
+			GameID:       gameID,
 		},
 	})
+	logrus.Println("-END EGRQ------")
 
 	//Game Client
 	type reqEGEG struct {
@@ -94,42 +137,39 @@ func (tm *Theater) EnterGameRequest(event *network.EventClientCommand, gameServe
 		Ticket        string `fesl:"TICKET"`
 		PlayerID      int    `fesl:"PID"`
 		IP            string `fesl:"I"`
-		Port          string `fesl:"P"`
+		Port          string `fesl:"P"` //in client port=p and ip= i lol
 		EncryptionKey string `fesl:"EKEY"`
-		// Alternatively to EKEY it is possible to use NOENCYRPTIONKEY
-		NoEcryptionKey string `fesl:"NOENCYRPTIONKEY,omitempty"`
 		IntIP          string `fesl:"INT-IP"`
 		IntPort        string `fesl:"INT-PORT"`
-		Secret         string `fesl:"SECRET,omitempty"`
-		// Alternatively to SECRET it is possible to use NOSECRET
-		NoSecret string `fesl:"NOSECRET,omitempty"`
-		Ugid     string `fesl:"UGID,omitempty"`
-		// Alternatively to UGID it is possible to use NOGUID
-		NoGUID  string `fesl:"NOGUID,omitempty"`
+		Secret         string `fesl:"SECRET"`
+		Ugid     string `fesl:"UGID"`
 		Huid     string `fesl:"HUID"`
 		LobbyID string `fesl:"LID"`
 		GameID  int    `fesl:"GID"`
 	}
 
+	logrus.Println("-BEGIN   E G E G ------")
 	event.Client.WriteEncode(&codec.Answer{
 		Type: codec.ThtrEnterGameEntitleGame,
 		Payload: ansEGEG{
 			TID:           event.Command.Message["TID"],
 			Platform:      "PC",
 			Ticket:       "2018751182",
-			PlayerID:      gr.PlayerID,
+			PlayerID:      PlayerID,
 			IP:            gameServer.ServerData.Get("IP"),
 			Port:          gameServer.ServerData.Get("PORT"),
-			EncryptionKey: "O65zZ2D2A58mNrZw1hmuJw%3d%3d",
+			EncryptionKey: "TEST1234",
 			IntIP:   gameServer.ServerData.Get("INT-IP"),
 			IntPort: gameServer.ServerData.Get("INT-PORT"),
-			Secret:  "2587913",
+			Secret:  "MargeSimpson",
 			Ugid:    gameServer.ServerData.Get("UGID"),
-			LobbyID: gr.LobbyID,
+			LobbyID: "1",
 			Huid:     "1",
-			GameID:  gr.GameID,
+			GameID:  gameID,
 		},
 	})
+	logrus.Println("-END E GEG------")
+
 }
 
 

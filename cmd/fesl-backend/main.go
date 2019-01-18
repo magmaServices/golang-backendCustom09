@@ -53,16 +53,11 @@ func initConfig() {
 
 func initLogger() {
 	logrus.SetLevel(config.LogLevel())
-
-	// logrus.SetFormatter(&logrus.JSONFormatter{
-	// 	DisableTimestamp: true,
-	// })
-	// logrus.SetFormatter(new(prefixed.TextFormatter))
-	// logrus.SetFormatter(&prefixed.TextFormatter{
-	// 	DisableTimestamp: true,
-	// 	DisableColors:    true,
-	// })
+	
 }
+
+
+
 
 func startServer(ctx context.Context) {
 	db, err := database.New()
